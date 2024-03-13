@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, main, footer {padding: 20px;
+        }
+        nav {
+            background-color: #f0f0f0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        nav ul li a:hover {
+            color: #666;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 20px;
+        }
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WELCOME TO IMAGE LINKS</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <LI><a href="#gallery">Gallery</a></LI>
+            <li><a href="#menu">Menu</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Hi! welcome to our website! Explore the links below.</p>
+            <a href="https://forbes.com"><img src="technology.jpg.jpeg" alt="Technology Image"></a>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <a href="https://www.Unsplash.com/"><img src="Nature1.jpg.jpeg" alt="Nature Image 1" loading="lazy"></a>
+                <a href="https://www.Unsplash.com/"><img src="nature2.jpg.jpeg" alt="Nature Image 2" loading="lazy"></a>
+                <a href="https://www.Unsplash.com/"><img src="nature3.jpg.jpeg" alt="Nature Image 3" loading="lazy"></a>
+            </div>
+        </section>
+        <section id="menu">
+            <h2>Menu</h2>
+            <div class="menu">
+                <a href="https://www.Inner Farmacy.com/"><img src="food1.jpg.jpeg" alt="Food Image 1"></a>
+                <a href="https://www.Quora.com/"><img src="food2.jpg.jpeg" alt="Food Image 2"></a>
+                <a href="https://www.Obozrevatel.com/"><img src="food3.jpg.jpeg" alt="Food Image 3"></a>
+             </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Image links</p>
+    </footer>
+</body>
+</html>
