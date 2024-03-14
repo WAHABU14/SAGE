@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>STUDENT REGISTRATION FORM</title>
+    <style>
+        footer {
+            background-color: #333;
+            color: hwb(252 91% 4%);
+            text-align: center;
+            position: static;
+            width: 100%;
+            padding: 1px;
+        }
+        body {
+            background-color: #fff(260, 25%, 88%);
+            color: hwb(0 4% 94%);
+        }
+        .center-align {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        header {
+            color: black;
+            text-align: center;
+            background-color: blue;
+        }
+    </style>
+     <header>
+        <h1>BUZA UNIVERSITY OF SCIENCE AND TECHNOLOGY</h1>
+    </header>
+    <p style="color: hsl(257, 89%, 49%);" class="center-align"><img src="images (2).jpeg"  alt="student" class="center-align"><br>EDUCATION BRINGS OPPORTUNITY</p>
+</head>
+<body>
+   
+    <h2>STUDENT REGISTRATION FORM</h2>
+    <form action="submit_registration.php" method="post">
+    <label for="name">First Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+    <label for="name">Middle Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+    <label for="name">Surname:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="dob">Date of birth:</label><br>
+    <input type="date" id="dob" name="dob" required><br><br>
+
+    <label for="gender">Gender:</label><br>
+    <select id="gender" name="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select><br><br>
+    
+    <label for="address">Address:</label><br>
+    <textarea name="address" id="address" required></textarea><br><br>
+
+    <label for="telephone">Telephone:</label><br>
+    <input type="tel" id="telephone" name="telephone" required><br><br>
+
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="course">Course:</label><br>
+    <input type="text" id="course" name="course" required><br><br>
+<marquee style="color: blue; font-style: italic;"><h2>PLEASE VERIFY YOUR INFORMATION BEFORE REGISTER. WE WARMLY WELCOME YOU INTO OUR FAMILY</h2></marquee>
+    <button type="submit">Register</button>
+    <button type="button" onclick="window.locatio.href='cancel_registration.php'">Cancel</button>
+    </form>    
+</body><br></br><br></br>    
+<footer>
+    <p>&copy; 2024 Registration form</p>
+</footer>    
+</html>
